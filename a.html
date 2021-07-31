@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ノードを追加</title>
+</head>
+<body>
+
+<p>最近行った店</p>
+
+<ul id="shopinfo">
+  <li id="m01">リストランテ南青山</li>
+  <li id="m02">和食屋青山</li>
+</ul>
+
+<button onClick="getElement();">ノードを追加</button>
+
+<script>
+function getElement(){
+    let fragment = document.createDocumentFragment();
+    let child1 = document.createElement('li');
+    child1.append(document.createTextNode('カレーショップ南青山'));
+    let child2 = document.createElement('li');
+    child2.append(document.createTextNode('Cafe Aoyama'));
+
+    fragment.append(child1);
+    fragment.append(child2);
+
+    let parentnode = document.getElementById('shopinfo');
+    parentnode.append(fragment);
+}
+</script>
+</body>
+</html>

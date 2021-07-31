@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textbox</title>
+    <link rel="stylesheet" type="text/css" href="repl.css">
+</head>
+<body>
+    
+    <form id="form1" action="#">
+    <input type="text" id="inputa" placeholder="ここに文字列を入力"><div id="div1"></div></br>
+    <div id="sometext">
+    <input type="text" id="inputform_0" placeholder="置換前_0">
+    </div> 
+    <div id="anytext">
+    <input type="text" id="outputform_0" placeholder="置換後_0">
+    </div>
+    <input type="button" onclick="newbox();" value="追加"></br>
+    <input type="button" onclick="answer();" value="置換">
+    </form>
+    <p id="resultmessage"></p>
+    
+    <script src="index.js"></script>
+</body>
+</html>
